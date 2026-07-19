@@ -10,6 +10,12 @@ locals {
 
   igw_name = "${local.prefix}-igw"
 
+  nat_eip_name = "${local.prefix}-nat-eip"
+
+  nat_gateway_name = "${local.prefix}-nat"
+
+  private_route_table_name = "${local.prefix}-private-rt"
+
   ###################################################
   # Subnets
   ###################################################
