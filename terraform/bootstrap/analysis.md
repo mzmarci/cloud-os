@@ -40,3 +40,5 @@ Without the state file, Terraform doesn't know what it created.
 # Why DynamoDB?
 
 Imagine you run terraform apply and another engineer runs terraform apply at the same time, Both modify the same infrastructure. The result can be state corruption or conflicting changes. The DynamoDB lock prevents this by allowing only one Terraform operation at a time.
+
+
